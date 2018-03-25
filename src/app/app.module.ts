@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ContactComponent } from './contact/contact.component';
+import { GithubComponent } from './github/github.component';
 
 // const routes:Routes=[
 //   {path:""component:AppComponent},
@@ -21,7 +22,8 @@ import { ContactComponent } from './contact/contact.component';
     AppComponent,
     AboutComponent,
     NotFoundComponent,
-    ContactComponent
+    ContactComponent,
+    GithubComponent
   ],
   imports: [
     BrowserModule,
