@@ -3,8 +3,32 @@
 	  <h5 class="card-header">{{user.name}} <small>({{user.login}})</small></h5>
 	  <div class="card-body">
 	    <div class="row">
-	    	<div class="col-md-row">
-	    		<img src="{{user.avatar_url}}">
+	    	<div class="col-md-4">
+	    		
+	    		<img src="{{user.avatar_url}}" class="img-thumbnail img-fluid">
+	    		<hr>
+	    		
+	    	    <a href="{{user.html_url}}" class="btn btn-outline-success btn-block"> GitHub Profile</a>
+	    	    
+	    	</div>
+	    	<div class="col-md-2"></div>
+	    	<div class="col-md-6">
+	    		
+		    		<span class="badge badge-primary">{{user.followers}} Followers</span>
+					<span class="badge badge-secondary">{{user.following}} Following</span>
+					<span class="badge badge-success">{{user.public_gists}} Public Gists</span>
+					<span class="badge badge-info">{{user.public_repos}} Public Repos</span>
+					<hr>
+					
+				
+	    		<div class="card">
+	    		 <ul class="list-group list-group-flush">
+				    <li class="list-group-item">Name: {{user.name}}</li>
+				    <li class="list-group-item">Lives in: {{user.location}}</li>
+				    <li class="list-group-item">Blog: {{user.name}}</li>
+				    <li class="list-group-item">Company: {{user.company}}</li>
+				  </ul>
+				</div>
 	    		
 	    	</div>
 	    </div>
