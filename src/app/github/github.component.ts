@@ -9,12 +9,14 @@ import { GithubService } from '../github-services/github.service';
 
 })
 export class GithubComponent implements OnInit {
+	user:any[];
 
   constructor(private githubService:GithubService) { 
   	console.log('Component init');
 
   	this.githubService.getUser().subscribe(user => {
   		console.log(user)
+  		this.user = user;
   	});
 
   }
