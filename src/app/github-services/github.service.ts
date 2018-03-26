@@ -18,4 +18,11 @@ export class GithubService {
    .map(res => res.json());
    }
 
+   getRepos(){
+   	return this._http.get('https://api.github.com/users/' + this.userName + '/repos?client_id='
+   + this.clientId + '&client_secret=' + this.clientSecret)
+   .map(res => res.json());
+
+   }
+
 }

@@ -10,6 +10,7 @@ import { GithubService } from '../github-services/github.service';
 })
 export class GithubComponent implements OnInit {
 	user:any[];
+	repos:any[];
 
   constructor(private githubService:GithubService) { 
   	console.log('Component init');
@@ -19,6 +20,10 @@ export class GithubComponent implements OnInit {
   		this.user = user;
   	});
 
+  	this.githubService.getRepos().subscribe(repos => {
+  		console.log(repos);
+  		this.repos = repos;
+  	});
   }
 
   ngOnInit() {
