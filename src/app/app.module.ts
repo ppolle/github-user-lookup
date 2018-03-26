@@ -14,6 +14,7 @@ import { AboutComponent } from './about/about.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ContactComponent } from './contact/contact.component';
 import { GithubComponent } from './github/github.component';
+import { DateCountPipe } from './date-count.pipe';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { GithubComponent } from './github/github.component';
     AboutComponent,
     NotFoundComponent,
     ContactComponent,
-    GithubComponent
+    GithubComponent,
+    DateCountPipe
     
     
   ],
