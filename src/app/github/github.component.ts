@@ -11,7 +11,7 @@ import { GithubService } from '../github-services/github.service';
 export class GithubComponent implements OnInit {
 	user:any[];
 	repos:any[];
-	userName:string[];
+	userName:string;
 
   constructor(private githubService:GithubService) {
   	this.githubService.getUser().subscribe(user => {
@@ -27,6 +27,7 @@ export class GithubComponent implements OnInit {
   }
   	
   findProfile(){
+
   	this.githubService.updateUser(this.userName);
 
   	this.githubService.getUser().subscribe(user => {
