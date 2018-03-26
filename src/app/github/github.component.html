@@ -1,4 +1,15 @@
-<div class="topPadding container border" *ngIf = "user">
+<div class="border container topPadding">
+<form action="">
+	<div class="form-group">
+		<label>Search GitHub User Names</label>
+		<input type="text" class="form-control" placeholder="Search GitHub">
+	</div>
+</form>
+</div>
+<br>
+
+<div class= "topPadding container border" *ngIf = "user">
+
 	  <div class="card">
 	  <h5 class="card-header">{{user.name}} <small>({{user.login}})</small></h5>
 	  <div class="card-body">
@@ -8,7 +19,7 @@
 	    		<img src="{{user.avatar_url}}" class="img-thumbnail img-fluid">
 	    		<hr>
 	    		
-	    	    <a href="{{user.html_url}}" class="btn btn-outline-success btn-block"> GitHub Profile</a>
+	    	    <a href="{{user.html_url}}" class="btn btn-outline-success btn-block" target="_blank"> GitHub Profile</a>
 	    	    
 	    	</div>
 	    	<div class="col-md-2"></div>
